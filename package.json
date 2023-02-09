@@ -1,0 +1,22 @@
+{
+    "name": "afwing-spider",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "getContent:start": "pm2 start bin/getContent.js -o ./logs/log.log -n getContent --watch",
+        "getContent:stop": "pm2 stop getContent",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "async": "^2.6.1",
+        "cheerio": "^1.0.0-rc.2",
+        "iconv-lite": "^0.4.24",
+        "request": "^2.88.0"
+    }
+}
